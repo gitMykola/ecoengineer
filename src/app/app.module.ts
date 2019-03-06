@@ -9,13 +9,18 @@ import {
   HomeComponent,
   HeaderComponent,
   FooterComponent,
-  DesignComponent
+  DesignComponent,
+  DomesticComponent,
+  BusinessComponent
 } from './components';
+import { TranslatorService } from './services/translator.service';
 
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
+    DomesticComponent,
+    BusinessComponent,
     HeaderComponent,
     DesignComponent,
     FooterComponent
@@ -27,7 +32,9 @@ import {
     SharedModule,
     RouterModule
   ],
-  providers: [],
+  providers: [
+    TranslatorService
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
