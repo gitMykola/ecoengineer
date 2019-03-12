@@ -1,0 +1,108 @@
+@font-face {
+  font-family: ecoLight;
+  src: url('../fonts/RobotoMono-Light.ttf');
+}
+
+@font-face {
+  font-family: ecoBold;
+  src: url('../fonts/RobotoMono-Bold.ttf');
+}
+.font {
+  font-family: ecoLight;
+  font-weight: 100;
+}
+
+.fontBold {
+  font-family: ecoBold;
+}
+.base-font-color{
+  color: bisque;
+}
+.dark-font-color{
+  color: #403a32;
+}
+.grey-color{
+  color: darkgray;
+}
+h1, h2, h3, h4, h5, h6, p, span, label, a , div, button{
+  .font;
+  .base-font-color;
+}
+a{
+  text-decoration: none;
+}
+.eco-card{
+  .dark-font-color;
+  margin: 10px;
+  padding: 5px;
+  background: bisque;
+}
+.eco-card-dark {
+  .eco-card;
+  .base-font-color;
+  background: rgba(0,0,0,0.8);
+}
+.eco-card-transparent-day {
+  .eco-card;
+  .base-font-color;
+  background: transparent;
+  //border: 1px solid #7a6d5e;
+  box-shadow: 2px 2px 7px #7a6d5e;
+  //border-radius: 3px;
+}
+.eco-card-transparent-night {
+  .eco-card-dark;
+  background: transparent;
+  border: 1px solid #403a32;
+  border-radius: 3px;
+  box-shadow: 2px 2px 7px bisque;
+}
+.cdk-overlay-container {
+  .cdk-overlay-connected-position-bounding-box {
+    .cdk-overlay-pane {
+      .mat-menu-panel {
+        background: rgba(0, 0, 0, 0.8);
+        max-width: 360px;
+
+        .mat-menu-content {
+          .mat-menu-item {
+            .font;
+            font-size: 25px;
+            .base-font-color;
+            display: flex;
+            align-items: center;
+            mat-icon {
+              .grey-color;
+              flex: 1 1 auto;
+              text-align: right;
+              margin: 0 0 0 5px;
+            }
+          }
+
+          .mat-menu-item:nth-child(4) {
+            .grey-color;
+            font-size: 15px;
+            border-top: 1px solid bisque;
+          }
+
+          .mat-menu-item:nth-child(5) {
+            .grey-color;
+            font-size: 15px;
+            border-top: 1px solid bisque;
+          }
+        }
+      }
+    }
+  }
+}
+@media screen and (min-width: 560px) {
+  .cdk-overlay-container {
+    .cdk-overlay-connected-position-bounding-box {
+      .cdk-overlay-pane {
+        .mat-menu-panel {
+          display: none;
+        }
+      }
+    }
+  }
+}

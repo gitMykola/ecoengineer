@@ -1,0 +1,29 @@
+<div class="home">
+  <div class="start-slide" #slide>
+    <div class="block"></div>
+    <div class="block">
+      <div class="start-text">
+        <p class="dark-font-color">{{ts.run('app.title_1')}}</p>
+        <p class="dark-font-color" [@title_2]="animate">{{ts.run('app.title_2')}}</p>
+        <p class="dark-font-color"[@title_3]="animate">{{ts.run('app.title_3')}}</p>
+      </div>
+      <img src="/assets/images/96.png" alt="wash_girl" />
+    </div>
+    <div class="block">
+      <div class="eco-card-transparent-day">
+        <p>{{ts.run('start.card_1')}}</p>
+        <img src="/assets/images/heat.jpg" alt="girl dry hands"/>
+      </div>
+      <div class="eco-card-transparent-day">
+        {{ts.run('start.card_2')}}
+        <img src="/assets/images/buss.jpg" alt="man has food" />
+      </div>
+      <div class="eco-card-transparent-day">
+        {{ts.run('start.card_3')}}
+        <img src="/assets/images/calcmoney.jpg" alt="money calculation" />
+      </div>
+    </div>
+  </div>
+  <app-domestic #domestic></app-domestic>
+  <app-business></app-business>
+</div>

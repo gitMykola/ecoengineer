@@ -1,0 +1,89 @@
+@b: bisque;
+@b95: rgba(0,0,0, 0.95); //rgba(255, 228, 196, 0.95);
+@b7: rgba(0,0,0, 0.7); //rgba(255, 228, 196, 0.7);
+@b6: rgba(0,0,0, 0.6); //rgba(255, 228, 196, 0.6);
+@d: #403a32;
+
+.business {
+  display: flex;
+  flex-flow: column wrap;
+  align-items: stretch;
+  background: transparent;
+  background: linear-gradient(@b6, @b95), url('../../../../assets/images/buss_hr.jpg');
+  background-size: cover;
+  background-attachment: fixed;
+
+  h2, div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  h2 {
+    color: @b;
+  }
+
+  div {
+    flex-flow: row wrap;
+    flex: 1 1;
+
+    div:nth-child(1) {
+      flex-grow: 1;
+    }
+
+    div:nth-child(2) {
+      display: flex;
+      flex-flow: column wrap;
+      flex-grow: 1;
+      padding: 20px 10px 50px 10px;
+      border-radius: 2px;
+      margin-top: 50px;
+
+      h3 {
+        margin: 8px 0;
+        color: @b;
+      }
+
+      ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+
+        li {
+          padding: 10px 20px;
+          //color: @d;
+          border: none;
+          //box-shadow: none;
+          border-radius: 20px;
+          background: linear-gradient(transparent 70%, @b);
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .business {
+    div {
+      div:nth-child(2) {
+        margin: 0 0 5px 5px;
+        padding: 5px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 560px) {
+  .business {
+    div {
+      div:nth-child(2) {
+        margin: 0;
+        padding: 0;
+      }
+
+      div:nth-child(1) {
+        flex-grow: 0;
+      }
+    }
+  }
+}

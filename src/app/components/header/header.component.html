@@ -1,0 +1,53 @@
+<header>
+  <a [routerLink]="['/']" class="logo">H&W</a>
+  <mat-toolbar>
+    <mat-toolbar-row>
+      <a class="font grey-color" *ngIf="!user">
+        {{ts.run('labels.sing_in')}}
+        <mat-icon>account_circle</mat-icon>
+      </a>
+      <a class="font grey-color" *ngIf="user" title="{{ts.run('labels.exit')}}">
+        {{user.name || user.email}}
+        <mat-icon>exit_to_app</mat-icon>
+      </a>
+    </mat-toolbar-row>
+    <mat-toolbar-row>
+      <div class="menu">
+        <button mat-button clacc="menu-item" [routerLink]="['/']">
+        {{ts.run('menu.home')}}
+        </button>
+        <button mat-button clacc="menu-item" [routerLink]="['/design']">
+        {{ts.run('menu.technologies')}}
+        </button>
+        <button mat-button clacc="menu-item" [routerLink]="['/services']">
+        {{ts.run('menu.services')}}
+        </button>
+      </div>
+      <div class="mobile-menu">
+        <button mat-icon-button [matMenuTriggerFor]="menu"
+                title="{{ts.run('menu.menu')}}">
+          <mat-icon>more_vert</mat-icon>
+        </button>
+        <mat-menu #menu="matMenu">
+          <button mat-menu-item [routerLink]="['/']">
+            {{ts.run('menu.home')}}
+          </button>
+          <button mat-menu-item [routerLink]="['/design']">
+            {{ts.run('menu.technologies')}}
+          </button>
+          <button mat-menu-item [routerLink]="['/services']">
+            {{ts.run('menu.services')}}
+          </button>
+          <button mat-menu-item *ngIf="!user">
+            {{ts.run('labels.sing_in')}}
+            <mat-icon>account_circle</mat-icon>
+          </button>
+          <button mat-menu-item *ngIf="user" title="{{ts.run('labels.exit')}}">
+            {{user.name || user.email}}
+            <mat-icon>exit_to_app</mat-icon>
+          </button>
+        </mat-menu>
+      </div>
+    </mat-toolbar-row>
+  </mat-toolbar>
+</header>
