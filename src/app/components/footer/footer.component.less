@@ -1,0 +1,44 @@
+@b: bisque;
+@b95: rgba(0,0,0, 0.95);
+@b7: rgba(0,0,0, 0.7);
+@b6: rgba(0,0,0, 0.6);
+@d: #403a32;
+#footer {
+  display: flex;
+  flex-flow: column wrap;
+  background: grey;
+  background: linear-gradient(@b6, black);
+
+  div:nth-child(1) {
+    flex: 1 1;
+    display: flex;
+    flex-flow: row wrap;
+    align-content: flex-start;
+
+    ul {
+      justify-content: flex-start;
+      list-style: none;
+      padding: 0;
+      margin: 0;
+
+      li {
+        button {
+          text-align: left;
+          margin: 5px;
+          color: silver;
+          padding: 5px;
+          border-bottom: 1px solid silver;
+          border-radius: 0;
+          color: silver !important;
+        }
+      }
+    }
+  }
+
+  div:nth-child(2) {
+    color: silver;
+    text-align: center;
+    padding: 10px;
+    font-size: 10px;
+  }
+}

@@ -1,0 +1,29 @@
+<div id="footer">
+  <div>
+    <ul class="bottom-menu">
+      <li>
+        <button mat-button clacc="menu-item" [routerLink]="['/']">
+
+          <mat-icon>home</mat-icon>{{ts.run('menu.home')}}
+        </button>
+      </li>
+      <li>
+        <button mat-button clacc="menu-item" [routerLink]="['/design']">
+
+          <mat-icon>gavel</mat-icon>{{ts.run('menu.technologies')}}
+        </button>
+      </li>
+      <li>
+        <button mat-button clacc="menu-item" [routerLink]="['/services']">
+
+          <mat-icon>monetization_on</mat-icon>{{ts.run('menu.services')}}
+        </button>
+      </li>
+    </ul>
+    <div class="news"></div>
+    <div class="socials"></div>
+  </div>
+  <div>
+    {{ts.run('footer.copy')}}
+    </div>
+</div>

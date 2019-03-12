@@ -36,11 +36,14 @@ export const EN = {
     text_2: 'Competitive and optimal solution for individual requirements.',
     text_3: 'Happy and satisfied clients.'
   },
-  smart: {
+  saving: {
     header: 'To smart saving',
-    title: 'It\'ll let You:',
-    text_1: 'Significantly reduce the monthly payments of estate maintaining.',
-    text_2: 'Get additional possibilities and comfort.',
-    text_3: 'Really increase equipment operate period.'
+    title: 'Let Yourself:',
+    text_1: 'Minimal monthly payments of estate maintaining.',
+    text_2: 'Additional possibilities and comfort.',
+    text_3: 'Really increased equipment operate period.'
+  },
+  footer: {
+    copy: 'H&W Odessa, Ukraine 2019'
   }
 };

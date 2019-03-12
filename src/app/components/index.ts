@@ -4,3 +4,4 @@ export * from './header/header.component';
 export * from './home/home.component';
 export * from './home/domestic/domestic.component';
 export * from './home/business/business.component';
+export * from './home/saving/saving.component';

@@ -11,7 +11,8 @@ import {
   FooterComponent,
   DesignComponent,
   DomesticComponent,
-  BusinessComponent
+  BusinessComponent,
+  SavingComponent
 } from './components';
 import { TranslatorService } from './services/translator.service';
 
@@ -21,6 +22,7 @@ import { TranslatorService } from './services/translator.service';
     HomeComponent,
     DomesticComponent,
     BusinessComponent,
+    SavingComponent,
     HeaderComponent,
     DesignComponent,
     FooterComponent
