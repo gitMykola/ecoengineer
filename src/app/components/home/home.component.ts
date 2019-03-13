@@ -95,4 +95,8 @@ export class HomeComponent implements OnInit, AfterViewInit {
       y: yPos
     };
   }
+  goToAnchor(anchor) {
+    document.querySelector('#' + anchor)
+      .scrollIntoView({ behavior: 'smooth', block: 'start' });
+  }
 }

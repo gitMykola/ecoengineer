@@ -10,21 +10,21 @@
       <img src="/assets/images/96.png" alt="wash_girl" />
     </div>
     <div class="block">
-      <div class="eco-card-transparent-day">
+      <div class="eco-card-transparent-day" (click)="goToAnchor('domestic')">
         <p>{{ts.run('start.card_1')}}</p>
         <img src="/assets/images/heat.jpg" alt="girl dry hands"/>
       </div>
-      <div class="eco-card-transparent-day">
+      <div class="eco-card-transparent-day" (click)="goToAnchor('business')">
         {{ts.run('start.card_2')}}
         <img src="/assets/images/buss.jpg" alt="man has food" />
       </div>
-      <div class="eco-card-transparent-day">
+      <div class="eco-card-transparent-day" (click)="goToAnchor('saving')">
         {{ts.run('start.card_3')}}
         <img src="/assets/images/calcmoney.jpg" alt="money calculation" />
       </div>
     </div>
   </div>
-  <app-domestic></app-domestic>
-  <app-business></app-business>
-  <app-saving></app-saving>
+  <app-domestic id="domestic"></app-domestic>
+  <app-business id="business"></app-business>
+  <app-saving id="saving"></app-saving>
 </div>

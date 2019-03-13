@@ -15,10 +15,10 @@ export class AppComponent {
   ) { }
   public ngOnInit() {
     this.ts.set('EN');
-    this.user = {
+    this.user = null;/*{
       name: 'Nick Borodyn',
       email: 'mykola_borodyn@ecoengineer.in.ua',
       token: 'sdfls-lfj/flvnsdfjvn'
-    };
+    };*/
   }
 }

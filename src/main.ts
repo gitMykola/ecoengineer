@@ -22,7 +22,7 @@ platformBrowserDynamic().bootstrapModule(AppModule)
   - make Home component objects gallery
   - make Home component contacts frame
   - add goToTop component
-  - redesign Business Component background to site style
+  done - redesign Business Component background to site style
   - add AskButton Component
   - design & add Technologies Component
   - design & add Services Component
