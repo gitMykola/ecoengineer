@@ -1,29 +1,45 @@
 <div id="footer">
   <div>
-    <ul class="bottom-menu">
-      <li>
-        <button mat-button clacc="menu-item" [routerLink]="['/']">
-
-          <mat-icon>home</mat-icon>{{ts.run('menu.home')}}
+    <div class="footer-block">
+      <div class="footer-block-header">
+      <button mat-button>
+        <span style="color:silver">{{ts.run('menu.menu')}}</span>
+      </button>
+      </div>
+      <ul class="bottom-menu">
+        <li>
+          <button mat-button clacc="menu-item" [routerLink]="['/']">
+            <span style="color:silver">{{ts.run('menu.home')}}</span>
+          </button>
+        </li>
+        <li>
+          <button mat-button clacc="menu-item" [routerLink]="['/design']">
+            <span style="color:silver">{{ts.run('menu.technologies')}}</span>
+          </button>
+        </li>
+        <li>
+          <button mat-button clacc="menu-item" [routerLink]="['/services']">
+            <span style="color:silver">{{ts.run('menu.services')}}</span>
+          </button>
+        </li>
+      </ul>
+    </div>
+    <div class="footer-block">
+      <div class="footer-block-header">
+        <button mat-button>
+          <span style="color:silver">{{ts.run('footer.videos')}}</span>
         </button>
-      </li>
-      <li>
-        <button mat-button clacc="menu-item" [routerLink]="['/design']">
-
-          <mat-icon>gavel</mat-icon>{{ts.run('menu.technologies')}}
+      </div>
+    </div>
+    <div class="footer-block">
+      <div class="footer-block-header">
+        <button mat-button>
+          <span style="color:silver">{{ts.run('footer.socials')}}</span>
         </button>
-      </li>
-      <li>
-        <button mat-button clacc="menu-item" [routerLink]="['/services']">
-
-          <mat-icon>monetization_on</mat-icon>{{ts.run('menu.services')}}
-        </button>
-      </li>
-    </ul>
-    <div class="news"></div>
-    <div class="socials"></div>
+      </div>
+    </div>
   </div>
-  <div>
-    {{ts.run('footer.copy')}}
+  <div class="footer-copy">
+    <p>{{ts.run('footer.copy')}}</p>
     </div>
 </div>

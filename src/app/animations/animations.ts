@@ -33,6 +33,22 @@ export const anim = {
   ],
     { params: { time: 1000, left: 200 } }
   ),
+  moveFromTop: animation([
+    animate('{{ time }}ms cubic-bezier(.12,1.43,.85,1.12)', keyframes([
+      style({
+        opacity: 0,
+        transform: 'translateY(-{{ top }}px)',
+        offset: 0
+      }),
+      style({
+        opacity: 1,
+        transform: '*',
+        offset: 1
+      })
+    ]))
+  ],
+    { params: { time: 1000, top: 200 } }
+  ),
   moveToStart: animation([
     animate('{{ time }}ms cubic-bezier(.12,1.43,.85,1.12)', keyframes([
       style({
@@ -42,7 +58,7 @@ export const anim = {
       }),
       style({
         opacity: 0,
-        transform: 'translateX(0px)',
+        transform: 'translate(0, 0)',
         offset: 1
       })
     ]))

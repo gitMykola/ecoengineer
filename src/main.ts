@@ -13,10 +13,10 @@ platformBrowserDynamic().bootstrapModule(AppModule)
 
 /*
   TODO
-  - saving animation add fromTop
-  - footer bottom menu set li color to silver
-  - footer bottom menu set icons padding
-  - footer bottom menu set @media-screen responsive on/off bottom menu
+  done - saving animation, add moveFromTop
+  done - footer bottom menu set li color to silver
+  done - footer bottom menu set icons padding
+  done - footer bottom menu set @media-screen responsive on/off bottom menu
   - footer add socials
   - add ankers to start slide buttons
   - make Home component objects gallery

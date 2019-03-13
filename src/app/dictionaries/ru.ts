@@ -44,6 +44,8 @@ export const RU = {
     text_3: 'Значительно увеличенный ресурс оборудования.'
   },
   footer: {
-    copy: 'H&W Одесса, Украина 2019'
+    copy: 'H&W Одесса, Украина 2019',
+    videos: 'Videos',
+    socials: 'Socials'
   }
 };

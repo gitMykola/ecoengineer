@@ -44,6 +44,8 @@ export const EN = {
     text_3: 'Really increased equipment operate period.'
   },
   footer: {
-    copy: 'H&W Odessa, Ukraine 2019'
+    copy: 'H&W Odessa, Ukraine 2019',
+    videos: 'Videos',
+    socials: 'Socials'
   }
 };
