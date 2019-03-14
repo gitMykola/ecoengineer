@@ -1,0 +1,76 @@
+@b: white;
+@b95: rgba(255,255,255, 0.95);
+@b7: rgba(255,255,255, 0.7);
+@b6: rgba(255,255,255, 0.6);
+@d: #403a32;
+
+.saving {
+  display: flex;
+  flex-flow: column wrap;
+  align-items: stretch;
+  background: @b;
+  background: linear-gradient(@b 30%, @b6), url('../../../../assets/images/calcmoney_hr.jpg');
+  background-size: cover;
+  background-attachment: fixed;
+  h2, div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  h2 {
+    color: @d;
+  }
+
+  div {
+    flex-flow: column wrap;
+    flex: 1 1;
+
+    h3 {
+      margin: 8px 0;
+      color: @d;
+    }
+
+    ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      display: flex;
+      flex-flow: row wrap;
+      align-items: stretch;
+
+      li {
+        flex: 1 1;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 4px;
+        background: linear-gradient(@d 70%, @b);
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .saving {
+    div {
+      margin: 0 0 5px 5px;
+      padding: 5px;
+    }
+  }
+}
+
+@media screen and (max-width: 560px) {
+  .saving {
+    div {
+      margin: 0;
+      padding: 0;
+      ul {
+        flex-direction: column;
+        padding: 10px;
+        li {
+          margin: 5px 0;
+        }
+      }
+    }
+  }
+}
