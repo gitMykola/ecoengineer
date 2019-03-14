@@ -17,8 +17,9 @@ platformBrowserDynamic().bootstrapModule(AppModule)
   done - footer bottom menu set li color to silver
   done - footer bottom menu set icons padding
   done - footer bottom menu set @media-screen responsive on/off bottom menu
-  - footer add socials
-  - add ankers to start slide buttons
+  done - footer add socials
+  done - add ankers to start slide buttons
+  - add footer videos youtube slider
   - make Home component objects gallery
   - make Home component contacts frame
   - add goToTop component

@@ -46,6 +46,9 @@ export const EN = {
   footer: {
     copy: 'H&W Odessa, Ukraine 2019',
     videos: 'Videos',
-    socials: 'Socials'
+    socials: 'Socials',
+    faceURL: 'https://www.facebook.com/nick.borodin.33',
+    linkedURL: 'https://www.linkedin.com/in/mykola-borodyn/',
+    youtubeURL: 'https://www.youtube.com/channel/UChp3uekUF8mdk2mmKw2tXbw'
   }
 };

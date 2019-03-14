@@ -68,7 +68,7 @@ export class DomesticComponent implements OnInit, AfterViewChecked {
     this.setCard();
   }
   constructor(
-    private ts: TranslatorService
+    public ts: TranslatorService
   ) { }
   ngOnInit() {
     this.setCard();

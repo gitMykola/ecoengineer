@@ -61,7 +61,7 @@ export class BusinessComponent implements OnInit, AfterViewChecked {
     this.setCard();
   }
   constructor(
-    private ts: TranslatorService
+    public ts: TranslatorService
   ) { }
 
   ngOnInit() {

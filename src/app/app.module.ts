@@ -5,6 +5,7 @@ import { RouterModule } from '@angular/router';
 import { AppRoutingModule } from './app-routing/app-routing.module';
 import { AppComponent } from './app.component';
 import { SharedModule } from './shared/shared.module';
+import { TranslatorService } from './services/translator.service';
 import {
   HomeComponent,
   HeaderComponent,
@@ -12,27 +13,30 @@ import {
   DesignComponent,
   DomesticComponent,
   BusinessComponent,
-  SavingComponent
-} from './components';
-import { TranslatorService } from './services/translator.service';
+  SavingComponent,
+  FbLikeComponent
+} from './components/index';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
+    HeaderComponent,
+    FooterComponent,
+    DesignComponent,
     DomesticComponent,
     BusinessComponent,
     SavingComponent,
-    HeaderComponent,
-    DesignComponent,
-    FooterComponent
+    FbLikeComponent
   ],
   imports: [
     BrowserModule,
     BrowserAnimationsModule,
     AppRoutingModule,
     SharedModule,
-    RouterModule
+    RouterModule,
+    HttpClientModule
   ],
   providers: [
     TranslatorService
