@@ -59,16 +59,16 @@ export class HomeComponent implements OnInit, AfterViewInit {
 
   ngOnInit() {
     const self = this;
-    window.onresize = function () {
+    window.onorientationchange = function () {
       setTimeout(() => { self.setSlideHeight() });
     };
     setTimeout(() => this.animate = true,100);
   }
   ngAfterViewInit() {
-    this.setSlideHeight();
+    setTimeout(() => { this.setSlideHeight() });
   }
   setSlideHeight() {
-    this.slide.nativeElement.style.height = window.innerHeight + 'px';
+    this.slide.nativeElement.style.height = (this.viewport().height) + 'px';
   }
   getPosition(el) {
     var xPos = 0;
@@ -99,4 +99,13 @@ export class HomeComponent implements OnInit, AfterViewInit {
     document.querySelector('#' + anchor)
       .scrollIntoView({ behavior: 'smooth', block: 'start' });
   }
+  viewport() {
+  let e: any = window;
+  let a = 'inner';
+  if (!(window.innerHeight)) {
+    a = 'client';
+    e = document.documentElement || document.body;
+  }
+  return { width: e[a + 'Width'], height: e[a + 'Height'] }
+}
 }
