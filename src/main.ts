@@ -23,6 +23,7 @@ platformBrowserDynamic().bootstrapModule(AppModule)
   - make Home component objects gallery
   - make Home component contacts frame
   - add goToTop component
+  - make image preloader
   done - redesign Business Component background to site style
   - add AskButton Component
   - add to Start slide selecting language buttons
