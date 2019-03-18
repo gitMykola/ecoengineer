@@ -19,7 +19,7 @@ platformBrowserDynamic().bootstrapModule(AppModule)
   done - footer bottom menu set @media-screen responsive on/off bottom menu
   done - footer add socials
   done - add ankers to start slide buttons
-  - add footer videos youtube slider
+  done - add footer videos youtube slider
   - make Home component objects gallery
   - make Home component contacts frame
   - add goToTop component
