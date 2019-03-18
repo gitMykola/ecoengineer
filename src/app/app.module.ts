@@ -14,9 +14,15 @@ import {
   DomesticComponent,
   BusinessComponent,
   SavingComponent,
-  FbLikeComponent
+  FbLikeComponent,
+  VideosComponent,
+  CarouselItemElement,
+  CarouselComponent,
+  CarouselItemDirective
 } from './components/index';
 import { HttpClientModule } from '@angular/common/http';
+import { CommonModule } from '@angular/common';
+import { SafeUrlsPipe } from './shared/saveUrlsPipe';
 
 @NgModule({
   declarations: [
@@ -28,7 +34,12 @@ import { HttpClientModule } from '@angular/common/http';
     DomesticComponent,
     BusinessComponent,
     SavingComponent,
-    FbLikeComponent
+    FbLikeComponent,
+    VideosComponent,
+    SafeUrlsPipe,
+    CarouselItemElement,
+    CarouselComponent,
+    CarouselItemDirective
   ],
   imports: [
     BrowserModule,
@@ -36,7 +47,8 @@ import { HttpClientModule } from '@angular/common/http';
     AppRoutingModule,
     SharedModule,
     RouterModule,
-    HttpClientModule
+    HttpClientModule,
+    CommonModule
   ],
   providers: [
     TranslatorService

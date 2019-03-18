@@ -30,6 +30,19 @@
           <span style="color:silver">{{ts.run('footer.videos')}}</span>
         </button>
       </div>
+      <carousel #carousel="carousel"
+                [showControls]="true"
+                [slide]="false"
+                class="videos">
+        <ng-container *ngFor="let video of config.youtube.videos">
+          <ng-container *carouselItem>
+            <iframe [src]="video | safeUrl" class="video-item"
+                    style="border:none"
+                    webkitallowfullscreen mozallowfullscreen allowfullscreen>
+            </iframe>
+          </ng-container>
+        </ng-container>
+      </carousel>
     </div>
     <div class="footer-block">
       <div class="footer-block-header">
@@ -39,19 +52,19 @@
       </div>
       <ul class="footer-socials">
         <li>
-            <a href="{{ts.run('footer.youtubeURL')}}" title="Youtube"
+            <a href="{{config.youtube.url}}" title="Youtube"
                target="_blank">
               <mat-icon svgIcon="youtube" style="color: silver"></mat-icon>
             </a>
         </li>
         <li>
-            <a href="{{ts.run('footer.faceURL')}}" title="Facebook"
+            <a href="{{config.facebook.url}}" title="Facebook"
                target="_blank">
               <mat-icon svgIcon="facebook" style="color: silver"></mat-icon>
             </a>
         </li>
         <li>
-            <a href="{{ts.run('footer.linkedURL')}}" title="LinkedIn"
+            <a href="{{config.linkedin.url}}" title="LinkedIn"
                target="_blank">
               <mat-icon svgIcon="linkedin" style="color: silver"></mat-icon>
             </a>

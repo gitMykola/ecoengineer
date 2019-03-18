@@ -25,6 +25,7 @@ platformBrowserDynamic().bootstrapModule(AppModule)
   - add goToTop component
   done - redesign Business Component background to site style
   - add AskButton Component
+  - add to Start slide selecting language buttons
   - design & add Technologies Component
   - design & add Services Component
   - REST API & backend...
