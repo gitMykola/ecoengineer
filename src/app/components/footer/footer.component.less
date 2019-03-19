@@ -9,12 +9,11 @@
   background: grey;
   background: linear-gradient(@b6, black);
 
-  > div {
+  div:nth-child(1) {
     display: flex;
-    flex-flow: row wrap;
 
     .footer-block {
-      flex: 1 1;
+      flex-grow: 1;
       display: flex;
       flex-flow: column wrap;
 
