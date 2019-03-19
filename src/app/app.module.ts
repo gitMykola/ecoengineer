@@ -15,7 +15,6 @@ import {
   BusinessComponent,
   SavingComponent,
   FbLikeComponent,
-  VideosComponent,
   CarouselItemElement,
   CarouselComponent,
   CarouselItemDirective
@@ -35,7 +34,6 @@ import { SafeUrlsPipe } from './shared/saveUrlsPipe';
     BusinessComponent,
     SavingComponent,
     FbLikeComponent,
-    VideosComponent,
     SafeUrlsPipe,
     CarouselItemElement,
     CarouselComponent,
