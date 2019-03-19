@@ -23,8 +23,8 @@ platformBrowserDynamic().bootstrapModule(AppModule)
   - make Home component objects gallery
   - make Home component contacts frame
   - add goToTop component
-  - make image preloader
-  - set as option crousel active controls background color
+  done - make image preloader
+  - set as input parametr carousel active controls background color
   done - redesign Business Component background to site style
   - add AskButton Component
   - add to Start slide selecting language buttons

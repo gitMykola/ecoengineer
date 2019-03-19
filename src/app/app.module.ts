@@ -22,6 +22,7 @@ import {
 import { HttpClientModule } from '@angular/common/http';
 import { CommonModule } from '@angular/common';
 import { SafeUrlsPipe } from './shared/saveUrlsPipe';
+import { PreloadImgDirective } from './directives';
 
 @NgModule({
   declarations: [
@@ -37,7 +38,8 @@ import { SafeUrlsPipe } from './shared/saveUrlsPipe';
     SafeUrlsPipe,
     CarouselItemElement,
     CarouselComponent,
-    CarouselItemDirective
+    CarouselItemDirective,
+    PreloadImgDirective
   ],
   imports: [
     BrowserModule,
