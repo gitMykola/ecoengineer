@@ -17,7 +17,8 @@ import {
   FbLikeComponent,
   CarouselItemElement,
   CarouselComponent,
-  CarouselItemDirective
+  CarouselItemDirective,
+  GoToTopComponent
 } from './components/index';
 import { HttpClientModule } from '@angular/common/http';
 import { CommonModule } from '@angular/common';
@@ -39,7 +40,8 @@ import { PreloadImgDirective } from './directives';
     CarouselItemElement,
     CarouselComponent,
     CarouselItemDirective,
-    PreloadImgDirective
+    PreloadImgDirective,
+    GoToTopComponent
   ],
   imports: [
     BrowserModule,

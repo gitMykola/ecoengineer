@@ -8,3 +8,4 @@ export * from './home/saving/saving.component';
 export * from './socials/FBlike/fbLike.component';
 export * from './carousel/carouselItem.direcrive';
 export * from './carousel/carousel.component';
+export * from './gototop/goToTop.component';

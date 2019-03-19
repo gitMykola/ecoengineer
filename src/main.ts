@@ -22,7 +22,7 @@ platformBrowserDynamic().bootstrapModule(AppModule)
   done - add footer videos youtube slider
   - make Home component objects gallery
   - make Home component contacts frame
-  - add goToTop component
+  done - add goToTop component(check cross-browser mode)
   done - make image preloader
   - set as input parametr carousel active controls background color
   done - redesign Business Component background to site style
