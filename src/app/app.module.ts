@@ -18,7 +18,8 @@ import {
   CarouselItemElement,
   CarouselComponent,
   CarouselItemDirective,
-  GoToTopComponent
+  GoToTopComponent,
+  GalleryComponent
 } from './components/index';
 import { HttpClientModule } from '@angular/common/http';
 import { CommonModule } from '@angular/common';
@@ -41,7 +42,8 @@ import { PreloadImgDirective } from './directives';
     CarouselComponent,
     CarouselItemDirective,
     PreloadImgDirective,
-    GoToTopComponent
+    GoToTopComponent,
+    GalleryComponent
   ],
   imports: [
     BrowserModule,
