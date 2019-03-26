@@ -1,0 +1,28 @@
+<div class="gallery">
+  <h2>{{ts.run('gallery.gallery')}}</h2>
+  <div class="gallery-wrapper">
+    <div *ngFor="let feedback of feedbacks; index as f;"
+         class="gallery-card-wrapper">
+      <div class="gallery-card eco-card-transparent-day">
+        <h5>{{ts.run('gallery.feedback_' + (f + 1))}}</h5>
+        <div class="gallery-image-wrapper">
+          <!--<img preloadImg *ngFor="let feed of feedback" src="{{feed}}"
+               class="eco-card-transparent-day" />-->
+          <!--<img preloadImg src="{{feedback[0]}}"
+       class="eco-card-transparent-day"/>-->
+          <carousel #carousel="carousel"
+                    [showControls]="true"
+                    [slide]="false"
+                    class="videos">
+            <ng-container *ngFor="let feed of feedback">
+              <ng-container *carouselItem>
+                <img preloadImg src="{{feed}}"
+                     class="eco-card-transparent-day" />
+              </ng-container>
+            </ng-container>
+          </carousel>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

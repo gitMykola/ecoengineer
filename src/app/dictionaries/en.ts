@@ -50,7 +50,7 @@ export const EN = {
   },
   gallery: {
     gallery: 'Portfolio',
-    feedback_1: '2015, Ukraine, Truskavets, 7 floor hotel, 120 rooms, swimming pool, restaurant. Total power up to 380kWt.',
+    feedback_1: '2015, Ukraine, Truskavets, 7 floor hotel, 120 rooms, swimming pool, restaurant. Total power up to 380 kWh.',
     feedback_1_1: 'Two Vaillant condensing boilers supply to heating system. Each up to 100 kWh and according hydro module.',
     feedback_1_2: 'Accumulation water tanks, total volume 3 ton. DHW system connected via heat exchanger up to 600 kWh.',
     feedback_1_3: 'Two Wolf on floor boilers supply to DHW system. Each up to 90 kWh.',
